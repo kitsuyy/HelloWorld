@@ -16,19 +16,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xaw-uW-0hZ">
-                                <rect key="frame" x="26" y="59" width="384" height="409"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="xaw-uW-0hZ">
+                                <rect key="frame" x="16" y="67" width="398" height="393"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                             </view>
-                            <view contentMode="scaleAspectFit" semanticContentAttribute="playback" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ep2-dI-4LB">
-                                <rect key="frame" x="26" y="486" width="384" height="409"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleAspectFit" semanticContentAttribute="playback" translatesAutoresizingMaskIntoConstraints="NO" id="Ep2-dI-4LB">
+                                <rect key="frame" x="16" y="478" width="398" height="402"/>
                                 <color key="backgroundColor" systemColor="systemCyanColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xaw-uW-0hZ" firstAttribute="height" secondItem="Ep2-dI-4LB" secondAttribute="height" multiplier="0.978049" id="J0q-D2-0n3"/>
+                            <constraint firstItem="Ep2-dI-4LB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="RUB-4n-cqB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ep2-dI-4LB" secondAttribute="bottom" constant="18" id="WJS-Ad-lRn"/>
+                            <constraint firstItem="xaw-uW-0hZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="Z0f-ze-1fi"/>
+                            <constraint firstItem="xaw-uW-0hZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bzb-zY-NV5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ep2-dI-4LB" secondAttribute="trailing" constant="16" id="gqS-BA-zc2"/>
+                            <constraint firstItem="Ep2-dI-4LB" firstAttribute="top" secondItem="xaw-uW-0hZ" secondAttribute="bottom" constant="18" id="mdD-vF-3KN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xaw-uW-0hZ" secondAttribute="trailing" constant="16" id="vxS-le-ZF5"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
